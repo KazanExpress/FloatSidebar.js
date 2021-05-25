@@ -65,7 +65,7 @@ function FloatSidebar(options) {
 
   let init = () => {
     $sideOuter.style.willChange = 'height';
-    $sideInner.style.width      = 'inherit';
+    $sideInner.style.width      = 'auto';
     $sideInner.style.transform  = 'translateZ(0)';
     $sideInner.style.willChange = 'transform';
 
