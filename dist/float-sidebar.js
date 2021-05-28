@@ -136,6 +136,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
   $sideInner.style.position = 'fixed';
   $sideInner.style.top = d.topSpacing + 'px';
   $sideInner.style.bottom = 'auto';
+  $sideInner.style.width = 'inherit';
 }), _defineProperty(_states$START$states$, fsm_states.UNFIXED, function (d, _ref3) {
   var $sideInner = _ref3.$sideInner;
 
@@ -148,6 +149,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
   $sideInner.style.position = 'fixed';
   $sideInner.style.top = 'auto';
   $sideInner.style.bottom = d.bottomSpacing + 'px';
+  $sideInner.style.width = 'inherit';
 }), _defineProperty(_states$START$states$, fsm_states.FINISH, function (_d, _ref5) {
   var $sideInner = _ref5.$sideInner;
 
@@ -460,7 +462,6 @@ function FloatSidebar(options) {
 
   var init = function init() {
     $sideOuter.style.willChange = 'height';
-    $sideOuter.style.width = 'auto';
     $sideInner.style.transform = 'translateZ(0)';
     $sideInner.style.willChange = 'transform';
 

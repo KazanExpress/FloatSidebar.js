@@ -11,6 +11,7 @@ export default {
     $sideInner.style.position = 'fixed';
     $sideInner.style.top      = `${d.topSpacing}px`;
     $sideInner.style.bottom   = 'auto';
+    $sideInner.style.width = 'inherit';
   },
 
   [states.UNFIXED]: (d, { $sideInner }) => {
@@ -23,6 +24,7 @@ export default {
     $sideInner.style.position = 'fixed';
     $sideInner.style.top      = 'auto';
     $sideInner.style.bottom   = `${d.bottomSpacing}px`;
+    $sideInner.style.width = 'inherit';
   },
 
   [states.FINISH]: (_d, { $sideInner }) => {
