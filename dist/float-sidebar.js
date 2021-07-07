@@ -464,6 +464,7 @@ function FloatSidebar(options) {
     $sideOuter.style.willChange = 'height';
     $sideInner.style.transform = 'translateZ(0)';
     $sideInner.style.willChange = 'transform';
+    $sideInner.style.width = 'inherit';
 
     dimensionObserver.start();
   };
